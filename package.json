@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "testdebug": "node debug ./node_modules/.bin/jest -i --forceExit --testPathPattern"
+  },
+  "dependencies": {
+    "jest": "^18.0.0",
+    "redis": "^2.6.3"
+  }
+}
