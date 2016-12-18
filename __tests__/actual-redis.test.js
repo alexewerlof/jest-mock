@@ -1,10 +1,12 @@
 // __tests__/actual-redis.test.js
-const redis = require('redis');
+const mockedRedis = require('../__mocks__/redis.js');
 
 jest.unmock('redis');
 
+const redis = require('redis');
+
 describe('redis', () => {
   it('not to be mocked', () => {
-    expect(redis).not.toEqual(require('../__mocks__/redis.js'));
+    expect(redis).not.toEqual(mockedRedis);
   });
 });

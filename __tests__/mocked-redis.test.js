@@ -1,11 +1,12 @@
 // __tests__/mocked-redis.test.js
-
-const redis = require('redis');
+const mockedRedis = require('../__mocks__/redis.js');
 
 jest.mock('redis');
 
+const redis = require('redis');
+
 describe('redis', () => {
   it('to be mocked', () => {
-    expect(redis).toEqual(require('../__mocks__/redis.js'));
+    expect(redis).toEqual(mockedRedis);
   });
 });
