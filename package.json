@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "testdebug": "node debug ./node_modules/.bin/jest -i --forceExit --testPathPattern"
+    "test": "jest"
   },
   "dependencies": {
     "jest": "^18.0.0",
